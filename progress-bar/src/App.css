@@ -1,0 +1,34 @@
+.App {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  background-color: blanchedalmond;
+  position: relative;
+}
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.step {
+  border-radius: 50%;
+  border: solid 1px grey;
+  padding: 10px;
+  transition: 1s ease-in;
+}
+
+.active {
+  border: solid 3px blue;
+}
