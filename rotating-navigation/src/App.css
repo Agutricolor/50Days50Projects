@@ -1,0 +1,76 @@
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#open div {
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  margin: 5px 0px;
+}
+
+.circle button#close {
+  left: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.circle button#close div.uno {
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  transform: rotate(45deg);
+}
+
+.circle button#close div.dos {
+  background-color: white;
+  width: 20px;
+  height: 3px;
+  transform: rotate(90deg);
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
